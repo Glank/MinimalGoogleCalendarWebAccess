@@ -30,14 +30,14 @@ public class SimpleCalendarTest {
         
         //Create the authorization code flow manager
         Set<String> scope = Collections.singleton(CalendarScopes.CALENDAR);
-        String clientID = GCGlobals.clientID;
+        String clientId = GCGlobals.clientId;
         String clientSecret = GCGlobals.clientSecret;
         //Use a factory pattern to create the code flow
         AuthorizationCodeFlow.Builder codeFlowBuilder = 
                 new GoogleAuthorizationCodeFlow.Builder(
                         httpTransport, 
                         jsonFactory, 
-                        clientID, 
+                        clientId, 
                         clientSecret, 
                         scope
                 );

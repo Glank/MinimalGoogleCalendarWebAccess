@@ -3,9 +3,9 @@ MinimalGoogleCalendarWebAccess
 
 This is a minimal maven project which connects to Google Calendar version 1.15.0-rc using OAuth 2.0.
 
-After cloning or downloading the repository, you must configure the source file glank.app.examples.calendar.GCGlobals to 
-use your own application's Google authentication credentials.
+The first time you run this program, you will be prompted for your own application's Google authentication credentials.
 You can create a new application and get credentials here: https://code.google.com/apis/console
+This will create a private "config.xml" file that you can edit later at any time if your credentials change.
 This project is for a Web Server application, choose your client id and secret accordingly.
 You may choose a redirect URI such as "http://localhost:8080/callback/" for testing purposes.
 
@@ -16,6 +16,8 @@ To build the project requires Maven and Java 1.6 or later:
 To run the example, you can then use:
 
     mvn exec:java -Dexec.mainClass="glank.app.examples.google.calendar.SimpleCalendarTest"
+
+The project comes with an Eclipse build configuration that will perform both of these commands for you if you are using eclipse.
 
 You will be given a URL to go to in a browser. Once there, you will be prompted to allow access to your calendar data.
 If you click yes, you will be redirected to the URI you specified in GCGlobals.

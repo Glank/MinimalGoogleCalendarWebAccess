@@ -1,3 +1,4 @@
 *.class
-target/*
 *.swp
+/target
+/config.xml

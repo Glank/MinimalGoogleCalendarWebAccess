@@ -10,22 +10,23 @@
   <name>Minimal Google Calendar Web Server Authenticated Access</name>
  
   <dependencies>
+    <!-- Essential Dependencies -->
     <dependency>
       <groupId>com.google.apis</groupId>
       <artifactId>google-api-services-calendar</artifactId>
       <version>v3-rev47-1.15.0-rc</version>
     </dependency>
     <dependency>
-        <groupId>com.google.api-client</groupId>
-        <artifactId>google-api-client-servlet</artifactId>
-        <version>1.15.0-rc</version>
-    </dependency>
-    <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-jackson</artifactId>
         <version>1.15.0-rc</version>
     </dependency>
-                       
+    <!-- For handling the authentication configuration file. -->
+    <dependency>
+        <groupId>commons-configuration</groupId>
+        <artifactId>commons-configuration</artifactId>
+        <version>1.6</version>
+    </dependency>
   </dependencies>
   
   <repositories>
